@@ -4,6 +4,25 @@
 
 'use strict';
 
+let lastFinalValue = 0;
+
+function formatShort(num) {
+  if (num >= 1e12) return (num / 1e12).toFixed(2).replace(/\.00$/, "") + "T";
+  if (num >= 1e9) return (num / 1e9).toFixed(2).replace(/\.00$/, "") + "B";
+  if (num >= 1e6) return (num / 1e6).toFixed(2).replace(/\.00$/, "") + "M";
+  if (num >= 1e3) return (num / 1e3).toFixed(2).replace(/\.00$/, "") + "K";
+  return num.toLocaleString("en-US");
+}
+
+function updateFinalDisplay() {
+  const toggle = document.getElementById("displayToggle");
+  if (!lastFinalValue) return;
+  finalStatEl.textContent = "$" + (toggle.checked
+    ? lastFinalValue.toLocaleString("en-US")
+    : formatShort(lastFinalValue));
+}
+
+
 /* ===== Brainrot DB (same entries) ===== */
 const brainrotDB = {
 "tung tung sahur": 100,
@@ -511,7 +530,8 @@ function updateResultUI(calc) {
   }
 
   // Display
-  finalStatEl.textContent = '$' + formatNumber(calc.finalStat);
+  lastFinalValue = calc.finalStat;
+  updateFinalDisplay();
   // Ensure the value fits inside its card (large numbers on narrow screens)
   fitTextToContainer(finalStatEl, { min: 18, max: 40, step: 1 });
   finalStatSubEl.textContent = '/ Fish';
@@ -700,6 +720,7 @@ function wireEvents() {
   btnCalcInline.addEventListener('click', calcAndRender);
   btnReset.addEventListener('click', resetAll);
   btnCopy.addEventListener('click', copyResult);
+  document.getElementById('displayToggle')?.addEventListener('change', updateFinalDisplay);
 
   // Initial
   setRank(0);
