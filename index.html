@@ -132,13 +132,22 @@
         <div id="mutationsList" class="chips" aria-label="Mutations list"></div>
       </section>
 
-      <!-- Result -->
       <aside class="card card--result" aria-live="polite">
         <div class="resultHero">
-          <div class="resultHero__label">Final Stat</div>
-          <div class="resultHero__value" id="finalStat">—</div>
-          <div class="resultHero__sub" id="finalStatSub">$/Fish</div>
-        </div>
+  <div class="resultHero__label">Final Stat</div>
+
+  <div class="display-toggle">
+    <label class="sf-switch">
+      <input type="checkbox" id="displayToggle">
+      <span class="sf-slider"></span>
+    </label>
+    <span class="toggle-label">Full value</span>
+  </div>
+
+  <div class="resultHero__value" id="finalStat">—</div>
+  <div class="resultHero__sub" id="finalStatSub">$/Fish</div>
+</div>
+
 
         <div class="divider"></div>
 
