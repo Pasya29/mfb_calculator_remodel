@@ -6,7 +6,7 @@
 
 /* ===== Brainrot DB (same entries) ===== */
 const brainrotDB = {
-    "tung tung sahur": 100,
+"tung tung sahur": 100,
     "cappucino assasino": 150,
     "pipi potato": 300,
     "cappuchina ballerina": 450,
@@ -53,11 +53,8 @@ const brainrotDB = {
     "matteo": 15000000,
     "strawberelli flamingelli": 15500000,
     "ketupat kepat": 16000000,
-    "skull skull skull": 18000000,
     "torrtuginni dragonfrutini": 18500000,
     "cocosini mama": 20000000,
-    "mangolini parrocini": 20000000,
-    "pipi corni": 25000000,
     "ganganzelli trulala": 22500000,
     "strawberry elephant": 50000000,
     "crystalini ananassini": 55000000,
