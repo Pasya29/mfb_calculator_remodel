@@ -21,7 +21,7 @@ const brainrotDB = {
     "nooo my hotspot": 3500,
     "udin din din din dun": 4500,
     "pipi kiwi": 5250,
-    "extinct ananasini": 7000
+    "extinct ananasini": 7000,
     "chef crabracadabra": 9000,
     "boneca ambalabu": 12000,
     "cacto hipopotamo": 13500,
