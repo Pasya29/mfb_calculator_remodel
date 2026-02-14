@@ -90,6 +90,8 @@ const brainrotDB = {
     "piruitolita bicicleteira": 420000000,
     "extinct karloo": 270000000,
     "skeletoni cannelloni": 650000000,
+    "spaghetti tualetti" : 750000000,
+    "bananini manini" : 850000000,
     "tralalelodon": 55000000,
     "orcadon": 58500000,
     "blingo tentacolo": 62500000,
@@ -152,6 +154,10 @@ const MUTATIONS = [
   {
     "name": "Magmatic",
     "pct": 140
+  },
+  {
+    "name": "Rainbow",
+    "pct": 150
   },
   {
     "name": "Fishing Master",
