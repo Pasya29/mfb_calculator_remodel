@@ -95,6 +95,7 @@ const brainrotDB = {
     "bananini manini" : 850000000,
     "namini meowini" : 900000000,
     "cerberus" : 1200000000,
+    "hydra cannelloni" : 1500000000,
     "tralalelodon": 55000000,
     "orcadon": 58500000,
     "blingo tentacolo": 62500000,
